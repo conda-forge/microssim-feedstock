@@ -1,5 +1,5 @@
 {% set name = "microssim" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/microssim/microssim-{{ version }}.tar.gz
-  sha256: ad7817d76ca851b7b28d265eb7931756d64e308bcb9040b316006857d2d0b240
+  sha256: 460e1d9fa42ce3c8dd105b6450aa2f2a7a20a1e53ec24443b32bc5d73244ecdf
 
 build:
   noarch: python
