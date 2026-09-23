@@ -1,5 +1,5 @@
 {% set name = "microssim" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/m/microssim/microssim-{{ version }}.tar.gz
-  sha256: 460e1d9fa42ce3c8dd105b6450aa2f2a7a20a1e53ec24443b32bc5d73244ecdf
+  url: https://files.pythonhosted.org/packages/source/m/microssim/microssim-{{ version }}.tar.gz
+  sha256: 1dcda02780a819cff4117a9254ab80d9416d16fe3f34fcb9334e6aa7c6025b4e
 
 build:
   noarch: python
@@ -24,11 +24,11 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.21,<3.0.0
-    - scipy <=1.17.0
+    - scipy <=1.17.1
     - scikit-image <=0.26.0
-    - pytorch >=2.5,<=2.9.1
+    - pytorch >=2.5,<=2.14.0
     - torchmetrics <=1.8.2
-    - tqdm <=4.67.1
+    - tqdm <=4.70.0
 
 test:
   imports:
